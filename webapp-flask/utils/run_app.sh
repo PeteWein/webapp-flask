@@ -4,6 +4,7 @@
  export FLASK_APP = "webapp-flask"
 
 # load a virtualenv
+pipenv --rm
 pip install --user pipenv
 
 # ensure dependencies downloaded
