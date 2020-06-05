@@ -20,11 +20,11 @@ This will review all 3 methods.
    - Ensure you have docker installed. More information can be found here: https://docs.docker.com/get-docker/
    - From the project root (where the Dockerfile is located), Run the docker build command
      - this will ideally be removed and you will only have to pull it down in the future 
-     -  e.g. `docker build --tag flask-webapp:test . ` 
-        - _Note:_ the name of the app and tag can be whatever you want, this is just the easiest for documentation.
+     -  e.g. `docker pull pwein/flask-webapp` 
+        - _Note:_ if you want a specific version, you can always add a `:` and the name of the tag, e.g. `docker pull pwein/flask-webapp:0.0.1` 
    - After building the image, launch the container with the app
-     - e.g. `docker run --publish 5000:5000 -d --name test flask-webapp:test`  
-        - _Note:_ publish denotes which port will be exposed, d runs in headless, name is the contianer name, and the last line is whatever name and tag of the image you chose.
+     - e.g. `docker run --publish 5000:5000 -d --name test pwein/flask-webapp`  
+        - _Note:_ publish denotes which port will be exposed, d runs in headless, name is the contianer name, and the last line is whatever name and tag of the image you chose. In addition, you can also add a semicolon and tag for a different version (`--name test pwein/flask-webapp:0.0.1`) 
    - Assuming everything worked, you are free to visit `http://localhost:5000` and confirm.   
 2. Powershell
    - Navigate to the `utils` directory and locate the `run_app.ps1` script.
