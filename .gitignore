@@ -4,3 +4,4 @@ Pipfile.lock
 credentials.txt
 .git/*
 .github/*
+.pytest_cache/*
