@@ -1,0 +1,5 @@
+*.code-workspace
+Pipfile
+Pipfile.lock
+credentials.txt
+.git/*
