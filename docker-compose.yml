@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+  web:
+    image: pwein/flask-webapp:latest
+    ports:
+      - "5000:5000"
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
