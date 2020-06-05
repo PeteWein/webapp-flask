@@ -1,6 +1,6 @@
 FROM python:alpine3.7
-COPY . /website
-WORKDIR /website
+COPY . /webapp-flask
+WORKDIR /webapp-flask
 RUN pip install -r requirements.txt
 EXPOSE 5000
-CMD python ./src/app.py
+CMD flask run
