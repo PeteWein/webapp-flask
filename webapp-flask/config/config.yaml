@@ -1,2 +1,5 @@
+root:
+  redirect: 'home'
+
 home:
   template: 'hello_world.html'
