@@ -1,6 +1,6 @@
 *.code-workspace
-*/Pipfile
-*/Pipfile.lock
+Pipfile
+Pipfile.lock
 */credentials.txt
 */.git/*
 */.pytest_cache/*
