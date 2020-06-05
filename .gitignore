@@ -1,9 +1,13 @@
-*.code-workspace
+# python specific
 Pipfile
 Pipfile.lock
-*/credentials.txt
 */.pytest_cache/*
 */__pycache__/*
+*/test/__pycache__/*
 
-#vscode
+# vscode
 .vscode/*
+*.code-workspace
+
+# Other
+*/credentials.txt
