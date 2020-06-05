@@ -1,6 +1,7 @@
 # Quick start guide
-Please refer to the `utils` directory.
-For windows, use the `run_app.ps1` script.
-For mac/linux, use the `run_app.sh` script.
+Please refer to the `utils` directory, as this contains instructions for launching a developer environment.
 
-Utimately the goal will be to use the **Dockerfile** currently contained and lean on tagging images with the commit ID, but the quick start scripts are sufficient for early development.  
+**Production Pipeline**
+
+Ultimately, the goal will be to have docker containers launched on a production server that automatically destroy/recreate when an update to the source code is created.
+
