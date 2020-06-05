@@ -1,0 +1,1 @@
+HOME_TEMPLATE = 'hello_world.html'

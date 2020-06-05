@@ -1,6 +1,8 @@
 #from root for windows machine (powershell):
 # .\utils\run_app.ps1
 
+$env:FLASK_APP = "webapp-flask"
+
 # load a virtualenv
 pip install --user pipenv
 
@@ -8,4 +10,5 @@ pip install --user pipenv
 pipenv install -r requirements.txt --python 3.7.7
 
 # run app
-pipenv run python .\src\app.py
+#pipenv run python .\app.py
+pipenv run flask run
