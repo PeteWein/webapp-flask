@@ -2,4 +2,4 @@ root:
   redirect: 'home'
 
 home:
-  template: 'hello_world.html'
+  template: 'index.html'
