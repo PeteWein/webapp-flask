@@ -4,7 +4,7 @@ services:
   #Nginx Service
   webserver:
     image: nginx:alpine
-    container_name: webserver_nginx
+    container_name: webserver
     restart: unless-stopped
     tty: true
     ports:
@@ -23,10 +23,6 @@ services:
   # the flask webapp service we've created  
   webapp:
     image: pwein/flask-webapp:latest
-    container_name: webapp-flask-webapp
-    #ports:
-    #  - "5000:5000"
-    #  - "8000:8000"
     expose: ["5000","8000"]
     networks:
       - app-network
