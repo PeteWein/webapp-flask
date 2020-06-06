@@ -15,3 +15,5 @@ webapp_flask.egg-info/*
 
 # Other
 */credentials.txt
+build/*
+dist/*
