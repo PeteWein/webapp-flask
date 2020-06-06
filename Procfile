@@ -1,1 +1,1 @@
-web: gunicorn webapp-flask.wsgi
+web: gunicorn --chdir webapp-flask wsgi
