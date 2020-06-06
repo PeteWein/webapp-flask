@@ -4,6 +4,8 @@ Pipfile.lock
 */.pytest_cache/*
 */__pycache__/*
 */test/__pycache__/*
+*/webapp-flask/*
+*/webapp-flask.egg-info/*
 
 # vscode
 .vscode/*
