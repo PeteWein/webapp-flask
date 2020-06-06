@@ -1,1 +1,1 @@
-web: /bin/sh -c flask\ run\ -h\ 0.0.0.0
+web: gunicorn webapp-flask.wsgi:app
