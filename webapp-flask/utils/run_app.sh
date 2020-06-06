@@ -8,7 +8,7 @@ pipenv --rm
 pip install --user pipenv
 
 # ensure dependencies downloaded
-pipenv install -r webapp-flask/requirements.txt --python 3.7.7
+pipenv install -r requirements.txt --python 3.7.7
 
 # run app
 pipenv run python ./app.py
