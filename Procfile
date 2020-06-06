@@ -1,1 +1,2 @@
-release: set FLASK_APP=webapp-flask
+build: set FLASK_APP = "webapp-flask"
+release: flask run

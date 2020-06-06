@@ -1,7 +1,7 @@
 #from root for mac/linux (terminal):
 # sh ./webapp-flask/utils/run_app.sh
 
- export FLASK_APP = "webapp-flask"
+export FLASK_APP = "webapp-flask"
 
 # load a virtualenv
 pipenv --rm
