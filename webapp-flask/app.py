@@ -25,4 +25,6 @@ def page_not_found(e):
     # note that we set the 404 status explicitly
     return render_template('page_not_found.html'), 404
 
-app.run()
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=True)
