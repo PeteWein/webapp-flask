@@ -1,7 +1,8 @@
 build:
   config:
     FLASK_APP: webapp-flask
-  docker:
-    web: Dockerfile
+    FOO: bar
+    docker:
+      web: Dockerfile
   run:
     web: flask run
