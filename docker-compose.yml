@@ -1,0 +1,36 @@
+version: '3'
+services:
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+    volumes: 
+      - './nginx.conf:/etc/nginx/nginx.conf'
+      - ./webapp-flask/templates:/usr/share/nginx/html 
+    depends_on:
+      - webapp
+    links:
+      - webapp
+
+  # the flask webapp service we've created  
+  webapp:
+    image: pwein/flask-webapp:latest
+    #ports:
+    #  - "5000:5000"
+    #  - "8000:8000"
+    expose: ["5000","8000"]
+    networks:
+      - app-network
+    
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
