@@ -1,1 +1,1 @@
-web: gunicorn app:pwein-webapp-flask
+web: gunicorn app:app
