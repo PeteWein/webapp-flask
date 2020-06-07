@@ -24,7 +24,7 @@ This will review all 3 methods.
         - _Note:_ if you want a specific version, you can always add a `:` and the name of the tag, e.g. `docker pull pwein/flask-webapp:0.0.1` 
    - After building the image, launch the container with the app
      - e.g. `docker run --publish 5000:5000 -d --name test pwein/flask-webapp`  
-        - _Note:_ publish denotes which port will be exposed, d runs in headless, name is the contianer name, and the last line is whatever name and tag of the image you chose. In addition, you can also add a semicolon and tag for a different version (`--name test pwein/flask-webapp:0.0.1`) 
+        - _Note:_ publish denotes which port will be exposed, d runs in headless, name is the container name, and the last line is whatever name and tag of the image you chose. In addition, you can also add a semicolon and tag for a different version (`--name test pwein/flask-webapp:0.0.1`) 
    - Assuming everything worked, you are free to visit `http://
    - **NOTE:** We also have a `docker-compose` initialize setup, in case you a) want to turn those docker commands into 1 and b) if you want to see the server with an nginx proxy.
       - In the root project directory: `docker-compose up` 
@@ -32,11 +32,11 @@ This will review all 3 methods.
 localhost:5000` and confirm.   
 2. Powershell
    - Navigate to the `utils` directory and locate the `run_app.ps1` script.
-   - From the root of the project, run the following command: `.\webapp-flask\utils\run_app.ps1`
+   - From the root of the project, run the following command: `.\utils\run_app.ps1`
      - This will set the appropriate variables, create the virtual envrionment, download dependencies, and launch the webapp.
    - Assuming everything has worked, you can navigate to `http://localhost:5000` and confirm. 
 3. Bash
    - Navigate to the `utils` directory and locate the `run_app.sh` script.
-   - From the root of the project, run the following command: `./webapp-flask/utils/run_app.sh`
+   - From the root of the project, run the following command: `./utils/run_app.sh`
      - This will set the appropriate variables, create the virtual envrionment, download dependencies, and launch the webapp.
    - Assuming everything has worked, you can navigate to `http://localhost:5000` and confirm. 

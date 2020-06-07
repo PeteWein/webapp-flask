@@ -1,5 +1,0 @@
-root:
-  redirect: 'home'
-
-home:
-  template: 'index.html'

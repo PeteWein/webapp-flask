@@ -1,7 +1,8 @@
 FROM python:alpine3.7
-ADD . /webapp-flask
-WORKDIR /webapp-flask
-COPY . /webapp-flask
+ADD . /application
+WORKDIR /application
+COPY . /application
 RUN pip install -r requirements.txt
+ENV FLASK_ENV "development"
 EXPOSE 5000
-CMD python ./webapp-flask/app.py
+CMD flask run --host=0.0.0.0
