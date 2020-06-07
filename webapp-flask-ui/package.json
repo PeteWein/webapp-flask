@@ -12,7 +12,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"Pipenv run python ..\\webapp-flask\\app.py\"",
+    "start": "concurrently \"react-scripts start\" \"cd.. && flask run\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
