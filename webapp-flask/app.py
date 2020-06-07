@@ -1,7 +1,8 @@
 import os, yaml
-from flask import Flask, render_template, redirect, url_for
-
+from flask import Flask, render_template, redirect, url_for, jsonify
+from flask_cors import CORS, cross_origin
 app = Flask(__name__, instance_relative_config=True)
+CORS(app)
 
 # set relative filepath
 dirname = os.path.dirname(__file__)
@@ -18,6 +19,11 @@ def root_dir():
 @app.route('/home', methods=['GET'])
 def home():
     return render_template(wc_data['home']['template'])
+
+@app.route('/api/favoriteFoods', methods=['GET'])
+def favoriteFoods():
+    favoriteFoods = ['Pizza', 'Cheesesteaks', 'Bagels']
+    return jsonify({"foods": favoriteFoods})
 
 # error handling
 @app.errorhandler(404)
