@@ -9,7 +9,7 @@ EXPOSE 5000
 CMD flask run --host=0.0.0.0
 
 # react front end
-FROM node:0.12.18-alpine
+FROM node:0.12.18-alpine3.9
 WORKDIR /webapp-flask-ui
 ENV PATH /application/node_modules/.bin:$PATH
 COPY package.json ./
