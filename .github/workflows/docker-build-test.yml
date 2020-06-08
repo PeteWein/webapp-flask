@@ -28,4 +28,4 @@ jobs:
         echo "Sha: ${{ steps.vars.outputs.sha_short }}"   
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker-build-test:.${{ steps.vars.outputs.sha_short }}
+      run: docker build . --file Dockerfile --tag docker-build-test:${{ steps.vars.outputs.sha_short }}
