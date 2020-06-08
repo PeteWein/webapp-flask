@@ -10,10 +10,10 @@ CMD flask run --host=0.0.0.0
 
 # react front end
 FROM node:0.12.18
-WORKDIR /webapp-flask-ui
+WORKDIR /application/webapp-flask-ui
 #ENV PATH /application/node_modules/.bin:$PATH
-COPY /application/webapp-flask-ui/package.json ./
-COPY /application/webapp-flask-ui/package-lock.json ./
+#COPY /application/webapp-flask-ui/package.json ./
+#COPY /application/webapp-flask-ui/package-lock.json ./
 EXPOSE 3000
 RUN npm install
 CMD npm run
