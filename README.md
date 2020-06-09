@@ -2,6 +2,7 @@
 A learning repo designed to create a webapp.
 
 **Docker**
+
 Currently, the docker images are hosted publicly here:
 
 `https://hub.docker.com/r/pwein/flask-webapp`
