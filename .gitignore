@@ -1,35 +1,8 @@
 # project root level gitignore for all subdirectories
 # this can be spun into it's 
-
-# python
-Pipfile
-Pipfile.lock
-*/.pytest_cache/*
-*/*/__pycache__/*
-__pycache__/*
-*/test/__pycache__/*
-*/webapp-flask/*
-webapp_flask.egg-info/*
-
-# javascript
-# dependencies
-*/node_modules
-*/webapp-flask-ui/node_modules
-*/.pnp
-*/.pnp.js
-
-
 # ide (e.g. vscode)
 .vscode/*
 *.code-workspace
-
-# testing
-*/coverage
-
-# production
-*/build
-build/*
-dist/*
 
 # misc
 */credentials.txt
