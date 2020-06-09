@@ -12,9 +12,9 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "cd webapp-flask/webapp-flask-ui && react-scripts start",
+    "build": "cd webapp-flask/webapp-flask-ui && react-scripts build",
+    "test": "cd webapp-flask/webapp-flask-ui && react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
