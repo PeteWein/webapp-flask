@@ -24,14 +24,14 @@ services:
 
   # the flask backend  
   backend:
-    build: application/
+    image: pwein/latest-backend
     expose: ["5000"]
     networks:
       - app-network
 
-  # the flask backend  
+  # the flask frontend
   frontend:
-    build: webapp-flask-ui/
+    image: pwein/latest-frontend
     expose: ["3000"]
     networks:
       - app-network
