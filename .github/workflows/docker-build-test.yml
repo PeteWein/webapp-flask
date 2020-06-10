@@ -27,5 +27,8 @@ jobs:
         echo "Branch: ${{ steps.vars.outputs.branch }}"
         echo "Sha: ${{ steps.vars.outputs.sha_short }}"   
     
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker-build-test:${{ steps.vars.outputs.sha_short }}
+    - name: Build the Docker Application Service Image
+      run: docker build . --file ./application/Dockerfile --tag docker-build-backend:${{ steps.vars.outputs.sha_short }}
+
+    - name: Build the Docker React Service Image
+      run: docker build . --file ./webapp-flask-ui/Dockerfile --tag docker-build-frontend:${{ steps.vars.outputs.sha_short }}

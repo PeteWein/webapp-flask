@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app
+web: cd application && gunicorn wsgi:app

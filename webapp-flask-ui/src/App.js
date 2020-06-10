@@ -17,7 +17,7 @@ class App extends React.Component {
     }
 
     favoriteFoods = async () => {
-        const favoriteFoods = await (await fetch('http://localhost:5000/api/favoriteFoods')).json();
+        const favoriteFoods = await (await fetch('/api/favoriteFoods')).json();
         return favoriteFoods.foods;
     }
 

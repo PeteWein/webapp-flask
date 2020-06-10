@@ -1,0 +1,7 @@
+# python
+Pipfile
+Pipfile.lock
+*/.pytest_cache/*
+*/__pycache__/*
+__pycache__/*
+*/test/__pycache__/*

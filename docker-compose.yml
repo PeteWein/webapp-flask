@@ -16,17 +16,26 @@ services:
       - './nginx.conf:/etc/nginx/nginx.conf'
       - ./webapp-flask/templates:/usr/share/nginx/html 
     depends_on:
-      - webapp
+      - backend
+      - frontend
     links:
-      - webapp
+      - backend
+      - frontend
 
-  # the flask webapp service we've created  
-  webapp:
-    image: pwein/flask-webapp:latest
-    expose: ["5000","8000"]
+  # the flask backend  
+  backend:
+    build: application/
+    expose: ["5000"]
     networks:
       - app-network
-    
+
+  # the flask backend  
+  frontend:
+    build: webapp-flask-ui/
+    expose: ["3000"]
+    networks:
+      - app-network
+      
 #Docker Networks
 networks:
   app-network:
