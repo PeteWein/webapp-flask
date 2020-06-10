@@ -29,7 +29,7 @@ services:
     networks:
       - app-network
 
-  # the flask frontend
+# the flask frontend
   frontend:
     image: pwein/flask-webapp:latest-frontend
     expose: ["3000"]
