@@ -12,7 +12,7 @@ Generally speaking, this is how the workflow is designed to operate and speed up
 1. Developer follows standard update pattern
     - clone repo, create branch, make changes, test changes locally, push changes, create pull request
 2. On pull request creation, CODEOWNERS automatically assigned as reviewers
-    -  automatic testing is then run using github workflows. Currently there is 1 sample test that runs, but 
+    -  automatic testing is then run using github workflows. Currently there is one sample test that runs
     -  automatic docker build is run on front end and back end to confirm they still build correctly
 3. Assuming all tests pass and reviewers sign off, code merged into master and branch is deleted
 4. Upon merging into master, webhook pushes new update to both Docker Hub and Heroku
