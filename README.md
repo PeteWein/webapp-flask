@@ -1,5 +1,5 @@
 # DevOps Web Application
-A learning repo designed to create an and-to-end devops pipeline without incurring any costs for deployment/hosting. Below are the components current in use:
+A learning repo designed to create an end-to-end devops pipeline without incurring any costs for deployment/hosting. Below are the components current in use:
 
 - Github: Source control management, webhooks to push to other components
 - Docker Hub: Host images built for the front end and back end
