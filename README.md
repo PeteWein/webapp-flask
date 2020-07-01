@@ -1,4 +1,4 @@
-# Devops Web Application
+# DevOps Web Application
 A learning repo designed to create an and-to-end devops pipeline without incurring any costs for deployment/hosting. Below are the components current in use:
 
 - Github: Source control management, webhooks to push to other components
@@ -25,8 +25,7 @@ Generally speaking, this is how the workflow is designed to operate and speed up
 
 The final application can be found here:
 
-https://pwein-webapp-flask.herokuapp.com/home
-
+https://pwein-webapp-sample.herokuapp.com/home
 
 **Docker**
 
@@ -40,9 +39,9 @@ Backend:
 
 If you are interested in looking at the versions currently available -- the tag associated to the image should reflect the tagged source code in the main github repository. 
 
-**Building**
+**Local Deployment**
 
-Please feel free to go into the `utils` directory for building locally. Generally speaking, the easiest way is with the docker-compose.yml file at the project root. To run this, you must first have docker installed. 
+Please feel free to go into the `utils` directory for information on local deployments, as well as additional options. The easiest way/recommended route is with the docker-compose.yml file at the project root. To run this, you must first have docker installed. 
 
 From there, simply run:
 
