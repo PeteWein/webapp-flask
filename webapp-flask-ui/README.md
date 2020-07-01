@@ -1,3 +1,11 @@
+## Note:
+
+The docker image of this react frontend can be found here.
+
+`https://hub.docker.com/r/pwein/react-frontend`
+
+----------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
